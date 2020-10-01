@@ -74,3 +74,8 @@ i {
   background: #b42f5d;
   color: white;
 }
+
+p {
+  display: block;
+  margin: 0 auto;
+}
