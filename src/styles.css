@@ -73,9 +73,11 @@ i {
 #current-button {
   background: #b42f5d;
   color: white;
+  position: relative;
+  left: 265px;
+  top: 10px;
 }
 
 p {
-  display: block;
-  margin: 0 auto;
+  text-align: center;
 }
