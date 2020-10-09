@@ -40,6 +40,10 @@ i {
   bottom: 40px;
 }
 
+.weather-app-wrapper {
+  margin: 20px auto;
+  max-width: 600px;
+}
 .weather-app {
   border: 1px solid #fa8c80;
   border-radius: 50px;
@@ -71,13 +75,13 @@ i {
 }
 
 #current-button {
-  background: #b42f5d;
+  background: #f99084;
   color: white;
-  position: relative;
-  left: 265px;
-  top: 10px;
+  border-radius: 50px;
+  border: 1px solid #f3a39b;
 }
 
 p {
   text-align: center;
+  font-size: 16px;
 }
