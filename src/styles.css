@@ -87,7 +87,9 @@ i {
   position: relative;
   bottom: 37px;
 }
-
+#weather-conditions {
+  font-style: italic;
+}
 #current-button {
   background: #f99084;
   color: white;
