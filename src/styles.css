@@ -1,6 +1,6 @@
 body {
   font-family: "Antic Slab", serif;
-  line-height: 2;
+  line-height: 1.3;
 }
 
 h1 {
@@ -27,17 +27,22 @@ li {
 }
 
 #date {
-  font-size: 16px;
+  font-size: 14px;
   font-weight: bold;
   position: relative;
-  bottom: 5px;
+  bottom: 70px;
+}
+
+#update {
+  position: relative;
+  bottom: 70px;
 }
 
 i {
   color: #cc376b;
   font-size: 60px;
   position: relative;
-  bottom: 40px;
+  bottom: 30px;
 }
 
 .weather-app-wrapper {
@@ -64,13 +69,23 @@ i {
   font-size: 45px;
   font-weight: 400;
   position: relative;
-  bottom: 29px;
-  left: 32px;
+  bottom: 20px;
+  left: 15px;
 }
 .units {
   position: relative;
-  bottom: 47px;
-  left: 25px;
+  bottom: 40px;
+  left: 5px;
+}
+
+#conditions {
+  position: relative;
+  bottom: 37px;
+}
+
+#conditions2 {
+  position: relative;
+  bottom: 37px;
 }
 
 #current-button {
