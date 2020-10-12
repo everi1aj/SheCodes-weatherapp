@@ -74,8 +74,17 @@ i {
 }
 .units {
   position: relative;
-  bottom: 40px;
-  left: 5px;
+  bottom: 45px;
+  left: 7px;
+  font-size: 12.5px;
+}
+
+.units .active {
+  color: black;
+  cursor: default;
+}
+.units .active:hover {
+  text-decoration: none;
 }
 
 #conditions {
