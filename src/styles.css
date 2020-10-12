@@ -51,7 +51,7 @@ i {
 }
 .weather-app {
   border: 1px solid #fa8c80;
-  border-radius: 50px;
+  border-radius: 25px;
   padding: 20px;
   margin: 20px auto;
   max-width: 600px;
