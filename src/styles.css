@@ -65,6 +65,7 @@ i {
     #b12a5b 100%
   );
 }
+
 .temperature {
   font-size: 45px;
   font-weight: 400;
@@ -75,26 +76,30 @@ i {
 .units {
   position: relative;
   bottom: 45px;
-  left: 7px;
+  left: 10px;
   font-size: 12.5px;
 }
 
 .units .active {
   color: black;
   cursor: default;
+  text-decoration: none;
 }
 .units .active:hover {
   text-decoration: none;
+  color: #0356b3;
 }
 
 #conditions {
   position: relative;
   bottom: 37px;
+  font-size: 12px;
 }
 
 #conditions2 {
   position: relative;
   bottom: 37px;
+  font-size: 12px;
 }
 #weather-conditions {
   font-style: italic;
