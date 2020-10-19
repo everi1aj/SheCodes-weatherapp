@@ -122,3 +122,7 @@ li {
   text-align: center;
   font-size: 15px;
 }
+
+#forecast {
+  font-size: 12px;
+}
