@@ -38,13 +38,6 @@ li {
   bottom: 70px;
 }
 
-i {
-  color: #cc376b;
-  font-size: 60px;
-  position: relative;
-  bottom: 30px;
-}
-
 .weather-app-wrapper {
   margin: 20px auto;
   max-width: 600px;
@@ -70,7 +63,7 @@ i {
   font-size: 45px;
   font-weight: 400;
   position: relative;
-  bottom: 23px;
+  bottom: 20px;
   left: 15px;
 }
 .units {
@@ -111,7 +104,12 @@ i {
   border: 1px solid #f3a39b;
 }
 
-p {
+#icon {
+  position: relative;
+  bottom: 50px;
+}
+
+#open-source {
   text-align: center;
   font-size: 16px;
 }
