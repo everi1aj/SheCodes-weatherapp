@@ -91,17 +91,19 @@ li {
 
 #conditions2 {
   position: relative;
-  bottom: 37px;
+  bottom: 40px;
   font-size: 12px;
 }
 #weather-conditions {
   font-style: italic;
+  bottom: 5px;
 }
 #current-button {
   background: #f99084;
   color: white;
   border-radius: 50px;
   border: 1px solid #f3a39b;
+  font-size: 14px;
 }
 
 #icon {
