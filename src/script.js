@@ -35,6 +35,15 @@ function showTemperature(response) {
   document.querySelector("#weather-conditions").innerHTML =
     response.data.weather[0].description;
 
+  let iconElement = document.querySelector("#icon");
+
+  iconElement.setAttribute(
+    "src",
+    `http://openweathermap.org/img/wn/${response.data.weather[0].icon}@2x.png`
+  );
+
+  iconElement.setAttribute("alt", response.data.weather[0].description);
+
   celsiusTemperature = response.data.main.temp;
 }
 
@@ -99,5 +108,3 @@ let currentLocationButton = document.querySelector("#current-button");
 currentLocationButton.addEventListener("click", getCurrentLocation);
 
 searchCity("New York");
-
-//challenges

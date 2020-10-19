@@ -23,57 +23,73 @@
   </head>
 
   <body>
-    <div class ="weather-app-wrapper">
-    <div class="container">
-      <div class="weather-app">
-        <form class="search-form" id="search-form">
+    <div class="weather-app-wrapper">
+      <div class="container">
+        <div class="weather-app">
+          <form class="search-form" id="search-form">
+            <div class="row">
+              <div class="col-6">
+                <input
+                  type="search"
+                  placeholder="Enter city here..."
+                  autofocus="on"
+                  autocomplete="off"
+                  class="form-control shadow-sm"
+                  id="city-input"
+                />
+              </div>
+              <div class="col-3">
+                <input
+                  type="submit"
+                  value="search"
+                  class="form-control shadow sm w-100"
+                  id="submit-button"
+                />
+
+                <button id="current-button">Current Location</button>
+              </div>
+            </div>
+          </form>
+          <h1 id="city"></h1>
+          <ul>
+            <li id="weather-conditions"></li>
+          </ul>
           <div class="row">
             <div class="col-6">
-              <input
-                type="search"
-                placeholder="Enter city here..."
-                autofocus="on"
-                autocomplete="off"
-                class="form-control shadow-sm"
-                id="city-input"
-              />
+              <img src="" alt="weather-icon" id="icon" class="float-left" />
+
+              <span div class="temperature" id="temperature"> </span>
+              <span div class="units"
+                ><a href="" id="celsius-link" class="active">°C </a>|<a
+                  href=""
+                  id="fahrenheit-link"
+                  >°F</a
+                >
+              </span>
             </div>
-            <div class="col-3">
-              <input
-                type="submit"
-                value="search"
-                class="form-control shadow sm w-100"
-                id="submit-button"
-              />
+            <div class="col-6">
+              <ul>
+                <li id="update">(Last Updated)</li>
+                <li id="date"></li>
+                <li id="conditions">
+                  Humidity: <span id="humidity-value"> </span>%
+                </li>
+                <li id="conditions2">
+                  Wind: <span id="wind-value"></span> km/h
+                </li>
+              </ul>
             </div>
-            </form>
-            <button id="current-button">Current Location</button>
-          </div>
-        <h1 id="city"></h1>
-        <ul>
-          <li id="weather-conditions"></li>
-        </ul>
-        <div class="row">
-          <div class="col-6">
-            <i class="fas fa-cloud-moon"></i>
-            <span div class="temperature" id="temperature"> </span>
-            <span div class="units"><a href="" id="celsius-link" class = "active" >°C </a>|<a href="" id="fahrenheit-link">°F</a> </span>
-          </div>
-          <div class="col-6">
-            <ul>
-              <li id="update">(Last Updated)</li><li id="date"></li>
-              <li id="conditions">Humidity: <span id="humidity-value"> </span>%</li>
-              <li id="conditions2">Wind: <span id="wind-value"></span> km/h</li>
-            </ul>
           </div>
         </div>
       </div>
     </div>
-    </div>
-  <p>
-    <a href="https://github.com/everi1aj/SheCodes-weatherapp.git">Open-source code</a>
-    by Allison Everitt
-  </p>
+    <p>
+      <a href="https://github.com/everi1aj/SheCodes-weatherapp.git"
+        >Open-source code</a
+      >
+      by Allison Everitt
+    </p>
+
     <script src="src/script.js"></script>
   </body>
 </html>
