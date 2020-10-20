@@ -4,8 +4,10 @@ body {
 }
 
 h1 {
+  font-family: "Baloo Chettan 2", cursive;
   position: relative;
-  font-size: 26px;
+  top: 10px;
+  font-size: 32px;
   font-weight: 100;
   line-height: 28px;
   padding-top: 15px;
@@ -22,6 +24,7 @@ li {
   list-style: none;
   font-size: 14px;
   font-weight: 100;
+  font-family: "Baloo Chettan 2";
   position: relative;
   left: 92px;
 }
@@ -35,7 +38,7 @@ h3 {
 }
 
 #date {
-  font-size: 18px;
+  font-size: 15px;
   font-weight: bold;
   position: relative;
   bottom: 55px;
@@ -76,12 +79,11 @@ h3 {
   font-weight: 400;
   position: relative;
   right: 15px;
-  bottom: 15px;
 }
 .units {
   position: relative;
-  bottom: 50px;
   right: 10px;
+  bottom: 35px;
   font-size: 12.5px;
 }
 
@@ -114,6 +116,7 @@ h3 {
 #weather-conditions {
   font-style: italic;
   left: 10px;
+  top: 10px;
 }
 
 #current-button {
@@ -126,8 +129,7 @@ h3 {
 
 #icon {
   position: relative;
-  bottom: 25px;
-  right: 15px;
+  right: 10px;
 }
 
 #open-source {
