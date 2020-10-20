@@ -101,11 +101,6 @@ li {
   left: 10px;
 }
 
-#icon {
-  position: relative;
-  right: 15px;
-}
-
 #current-button {
   background: #f99084;
   color: white;
@@ -131,7 +126,7 @@ h3 {
 
 #forecast-icon {
   position: relative;
-  right: 27px;
+  right: 23px;
   bottom: 10px;
 }
 
