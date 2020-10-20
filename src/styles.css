@@ -100,6 +100,7 @@ h3 {
   bottom: 30px;
   font-size: 18px;
   color: #38383a;
+  font-weight: bold;
 }
 
 #conditions2 {
@@ -107,6 +108,7 @@ h3 {
   bottom: 30px;
   font-size: 18px;
   color: #38383a;
+  font-weight: bold;
 }
 
 #weather-conditions {
