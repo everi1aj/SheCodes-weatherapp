@@ -26,6 +26,14 @@ li {
   left: 92px;
 }
 
+h3 {
+  font-size: 14px;
+  color: #38383a;
+  position: relative;
+  left: 5px;
+  top: 15px;
+}
+
 #date {
   font-size: 18px;
   font-weight: bold;
@@ -123,11 +131,6 @@ li {
 #open-source {
   text-align: center;
   font-size: 15px;
-}
-
-h3 {
-  font-size: 14px;
-  color: #38383a;
 }
 
 #forecast-icon {
