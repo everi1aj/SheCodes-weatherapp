@@ -38,6 +38,7 @@ function formatHours(timestamp) {
 
 function showTemperature(response) {
   document.querySelector("#city").innerHTML = response.data.name;
+  celsiusTemperature = response.data.main.temp;
   let temperatureElement = document.querySelector("#temperature");
   temperatureElement.innerHTML = Math.round(celsiusTemperature);
 
@@ -57,8 +58,6 @@ function showTemperature(response) {
   );
 
   iconElement.setAttribute("alt", response.data.weather[0].description);
-
-  celsiusTemperature = response.data.main.temp;
 }
 
 function displayFahrenheitTemperature(event) {

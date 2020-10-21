@@ -13,6 +13,7 @@ h1 {
   padding-top: 15px;
   padding-bottom: 7px;
   margin: 0px;
+  color: #3f3d56;
 }
 
 ul {
@@ -30,27 +31,28 @@ li {
 }
 
 h3 {
-  font-size: 14px;
-  color: #38383a;
+  font-size: 18px;
+  color: #3f3d56;
   position: relative;
   left: 5px;
-  top: 15px;
+  bottom: 20px;
 }
 
 #date {
   font-size: 15px;
-  font-weight: bold;
   position: relative;
-  bottom: 55px;
-  color: #38383a;
+  bottom: 25px;
+  color: #3f3d56;
+  font-family: "Baloo Chettan 2";
 }
 
 #update {
   position: relative;
-  bottom: 60px;
-  font-size: 18px;
-  color: #38383a;
-  font-weight: bold;
+  bottom: 25px;
+  font-size: 15px;
+  color: #3f3d56;
+  font-family: "Baloo Chettan 2";
+  text-decoration: underline;
 }
 
 .weather-app-wrapper {
@@ -62,7 +64,7 @@ h3 {
   border-radius: 25px;
   padding: 20px;
   margin: 20px auto;
-  max-width: 600px;
+  max-width: 500px;
   background: linear-gradient(
     to right,
     #ff8177 0%,
@@ -79,6 +81,7 @@ h3 {
   font-weight: 400;
   position: relative;
   right: 15px;
+  color: #3f3d56;
 }
 .units {
   position: relative;
@@ -99,18 +102,21 @@ h3 {
 
 #conditions {
   position: relative;
-  bottom: 30px;
+  bottom: 50px;
   font-size: 18px;
-  color: #38383a;
-  font-weight: bold;
+  color: #3f3d56;
+  font-family: "Baloo Chettan 2";
+  font-style: italic;
 }
 
 #conditions2 {
   position: relative;
-  bottom: 30px;
+  bottom: 50px;
   font-size: 18px;
-  color: #38383a;
-  font-weight: bold;
+  color: #3f3d56;
+  font-family: "Baloo Chettan 2";
+  padding-top: 5px;
+  font-style: italic;
 }
 
 #weather-conditions {
@@ -125,11 +131,22 @@ h3 {
   border-radius: 50px;
   border: 1px solid #f3a39b;
   font-size: 14px;
+  font-family: "Baloo Chettan 2", cursive;
 }
 
 #icon {
   position: relative;
   right: 10px;
+}
+
+#background-icon {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 40%;
+  position: relative;
+  bottom: 70px;
+  left: 55px;
 }
 
 #open-source {
@@ -140,11 +157,12 @@ h3 {
 #forecast-icon {
   position: relative;
   right: 23px;
-  bottom: 10px;
+  bottom: 30px;
 }
 
 .weather-forecast-temperature {
-  font-size: 12px;
-  color: #38383a;
-  font-weight: light;
+  font-size: 18px;
+  color: #3f3d56;
+  position: relative;
+  bottom: 20px;
 }
