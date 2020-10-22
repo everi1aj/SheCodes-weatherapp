@@ -63,6 +63,15 @@ function showTemperature(response) {
 function displayFahrenheitTemperature(event) {
   event.preventDefault();
   let temperatureElement = document.querySelector("#temperature");
+  let forecastItems = document.querySelectorAll(
+    ".weather-forecast-temperature"
+  );
+
+  forecastItems.forEach(function (item) {
+    let currentTemp = item.innerHTML;
+    item.innerHTML = `${Math.round((currentTemp * 9) / 5 + 32)}`;
+  });
+
   celsiusLink.classList.remove("active");
   fahrenheitLink.classList.add("active");
 
