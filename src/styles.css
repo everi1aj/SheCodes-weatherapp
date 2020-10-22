@@ -39,20 +39,11 @@ h3 {
 }
 
 #date {
-  font-size: 15px;
+  font-size: 18px;
   position: relative;
   bottom: 25px;
   color: #3f3d56;
-  font-family: "Baloo Chettan 2";
-}
-
-#update {
-  position: relative;
-  bottom: 25px;
-  font-size: 15px;
-  color: #3f3d56;
-  font-family: "Baloo Chettan 2";
-  text-decoration: underline;
+  font-family: "Baloo Chettan 2", cursive;
 }
 
 .weather-app-wrapper {
@@ -81,12 +72,13 @@ h3 {
   font-weight: 400;
   position: relative;
   right: 15px;
+  top: 10px;
   color: #3f3d56;
 }
 .units {
   position: relative;
   right: 10px;
-  bottom: 35px;
+  bottom: 25px;
   font-size: 12.5px;
 }
 
@@ -103,7 +95,7 @@ h3 {
 #conditions {
   position: relative;
   bottom: 50px;
-  font-size: 18px;
+  font-size: 22px;
   color: #3f3d56;
   font-family: "Baloo Chettan 2";
   font-style: italic;
@@ -112,7 +104,8 @@ h3 {
 #conditions2 {
   position: relative;
   bottom: 50px;
-  font-size: 18px;
+
+  font-size: 22px;
   color: #3f3d56;
   font-family: "Baloo Chettan 2";
   padding-top: 5px;
@@ -137,6 +130,7 @@ h3 {
 #icon {
   position: relative;
   right: 10px;
+  top: 10px;
 }
 
 #background-icon {
