@@ -63,11 +63,16 @@ function showTemperature(response) {
 function displayFahrenheitTemperature(event) {
   event.preventDefault();
   let temperatureElement = document.querySelector("#temperature");
-  let forecastItems = document.querySelectorAll(
-    ".weather-forecast-temperature"
-  );
+  let forecastMax = document.querySelectorAll(".forecast-max");
 
-  forecastItems.forEach(function (item) {
+  forecastMax.forEach(function (item) {
+    let currentTemp = item.innerHTML;
+    item.innerHTML = `${Math.round((currentTemp * 9) / 5 + 32)}`;
+  });
+
+  let forecastMin = document.querySelectorAll(".forecast-min");
+
+  forecastMin.forEach(function (item) {
     let currentTemp = item.innerHTML;
     item.innerHTML = `${Math.round((currentTemp * 9) / 5 + 32)}`;
   });
@@ -77,6 +82,10 @@ function displayFahrenheitTemperature(event) {
 
   let fahrenheitTemp = (celsiusTemperature * 9) / 5 + 32;
   temperatureElement.innerHTML = Math.round(fahrenheitTemp);
+
+  // Disable event to avoid clicking twice and updating twice the values
+  fahrenheitLink.removeEventListener("click", displayFahrenheitTemperature);
+  celsiusLink.addEventListener("click", displayCelsiusTemperature);
 }
 
 function displayCelsiusTemperature(event) {
@@ -86,6 +95,24 @@ function displayCelsiusTemperature(event) {
 
   let temperatureElement = document.querySelector("#temperature");
   temperatureElement.innerHTML = Math.round(celsiusTemperature);
+
+  let forecastMax = document.querySelectorAll(".forecast-max");
+
+  forecastMax.forEach(function (item) {
+    let currentTemp = item.innerHTML;
+    item.innerHTML = `${Math.round(((currentTemp - 32) * 5) / 9)}`;
+  });
+
+  let forecastMin = document.querySelectorAll(".forecast-min");
+
+  forecastMin.forEach(function (item) {
+    let currentTemp = item.innerHTML;
+    item.innerHTML = `${Math.round(((currentTemp - 32) * 5) / 9)}`;
+  });
+
+  // Disable event to avoid clicking twice and updating twice the values
+  celsiusLink.removeEventListener("click", displayCelsiusTemperature);
+  fahrenheitLink.addEventListener("click", displayFahrenheitTemperature);
 }
 
 let celsiusTemperature = null;
@@ -111,16 +138,20 @@ function displayForecast(response) {
               <h3>
               ${formatHours(forecast.dt * 1000)}
               </h3>
-              <img 
+              <img
               src="http://openweathermap.org/img/wn/${
                 forecast.weather[0].icon
               }@2x.png"
               id="forecast-icon"/>
               <div class="weather-forecast-temperature">
                 <strong>
-                ${Math.round(forecast.main.temp_max)}°
+                <span class="forecast-max">${Math.round(
+                  forecast.main.temp_max
+                )}</span>°
                 </strong>/
-                ${Math.round(forecast.main.temp_min)}°
+                <span class="forecast-min">${Math.round(
+                  forecast.main.temp_min
+                )}</span>°
               </div>
             </div>
             `;
@@ -146,6 +177,9 @@ function searchLocation(position) {
   let apiKey = "42e6bc06b4b0dadbd7f47c9b7345f143";
   let apiUrl = `https://api.openweathermap.org/data/2.5/weather?lat=${position.coords.latitude}&lon=${position.coords.longitude}&appid=${apiKey}&units=metric`;
   axios.get(apiUrl).then(showTemperature);
+
+  apiURL = `https://api.openweathermap.org/data/2.5/forecast?lat=${position.coords.latitude}&lon=${position.coords.longitude}&appid=${apiKey}&units=metric`;
+  axios.get(apiURL).then(displayForecast);
 }
 
 function getCurrentLocation(event) {
